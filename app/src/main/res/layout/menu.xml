@@ -37,6 +37,14 @@
             android:textColor="@android:color/white"
             android:textSize="12pt"
             />
+
+        <ListView
+            android:id="@+id/ListView_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            >
+        </ListView>
     </LinearLayout>
 
 </LinearLayout>

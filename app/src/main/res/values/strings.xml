@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Moringa Informer</string>
+    <string name="Welcome">Welcome to</string>
+    <string name="CourseCode">Moringa School</string>
+
+    <string name="CourseTitle">Learn to code
+        from a world-class curriculum!</string>
+
+    <string name="Semester">Spring 2012</string>
+    <string name="clickprompt">Click to Continue</string>
+
+
+
+    <string name="menu">My Menu</string>
+</resources>

@@ -1,5 +1,7 @@
 package com.example.victor.moringainformer;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -29,7 +31,7 @@ public class MenuActivity extends AppCompatActivity {
         // array created above
         ArrayAdapter<String> adapt =  new ArrayAdapter<String>(this, R.layout.list_item, items);
         menuList.setAdapter(adapt);
-/*
+
 
 
         // make the menu items actionable by declaring an onclick listener for
@@ -38,12 +40,73 @@ public class MenuActivity extends AppCompatActivity {
         menuList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View itemClicked,
                                     int position, long id) {
+/*
+                //***===**==** This is the Toast Activity BEGIN/*
                 // When clicked, show a toast with the TextView text
                 Toast.makeText(getApplicationContext(),
                         ((TextView) itemClicked).getText(), Toast.LENGTH_SHORT)
                         .show();
+                //***===**==** This is the Toast Activity END
+                */
+
+                //&&&&&&&&&&&&&&&&&&&&& START What to do with the list view items &&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+                TextView textview = (TextView) itemClicked;
+                String strText = textview.getText().toString();
+                switch(position){
+                    case 0:
+// When clicked, show a toast with the TextView text
+                        Toast.makeText(getApplicationContext(), strText,
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                    case 1:
+// When clicked, show a toast with the TextView text
+                        Toast.makeText(getApplicationContext(), strText,
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                    case 2:
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("http://course.cse.ust.hk/comp4521/Description.html")));
+                        break;
+                    case 3:
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("http://course.cse.ust.hk/comp4521/Syllabus.html")));
+                        break;
+                    case 4:
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("http://course.cse.ust.hk/comp4521/Lectures.html")));
+                        break;
+                    case 5:
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("http://course.cse.ust.hk/comp4521/Labs.html")));
+                        break;
+                    case 6:
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("http://course.cse.ust.hk/comp4521/Exams.html")));
+                        break;
+                    case 7:
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("http://course.cse.ust.hk/comp4521/Project.html")));
+                        break;
+                    case 8:
+                        startActivity(new Intent(Intent.ACTION_VIEW,
+                                Uri.parse("http://course.cse.ust.hk/comp4521/Links.html")));
+                        break;
+                    default:
+// When clicked, show a toast with the TextView text
+                        Toast.makeText(getApplicationContext(), strText,
+                                Toast.LENGTH_SHORT).show();
+                        break;
+                }
+
+
+
+                // &&&&&&&&&&&&&&&&&&&&& END What to do with the list view items &&&&&&&&&&&&&&&&&&&&&&&&&
+
             }
         });
-*/
+
+
     }
 }

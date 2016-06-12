@@ -14,6 +14,7 @@
     <string-array name="menu_items">
         <item>Contact Information</item>
         <item>Time Table</item>
+        <!--
         <item>Course Information</item>
         <item>Syllabus</item>
         <item>Lectures</item>
@@ -21,5 +22,6 @@
         <item>Exams</item>
         <item>Project</item>
         <item>Links</item>
+        -->
     </string-array>
 </resources>

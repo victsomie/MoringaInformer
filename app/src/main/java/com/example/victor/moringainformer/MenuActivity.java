@@ -67,31 +67,31 @@ public class MenuActivity extends AppCompatActivity {
                         break;
                     case 2:
                         startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("http://course.cse.ust.hk/comp4521/Description.html")));
+                                Uri.parse("http://www.moringaschool.com/")));
                         break;
                     case 3:
                         startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("http://course.cse.ust.hk/comp4521/Syllabus.html")));
+                                Uri.parse("http://www.moringaschool.com/")));
                         break;
                     case 4:
                         startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("http://course.cse.ust.hk/comp4521/Lectures.html")));
+                                Uri.parse("http://www.moringaschool.com/")));
                         break;
                     case 5:
                         startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("http://course.cse.ust.hk/comp4521/Labs.html")));
+                                Uri.parse("http://www.moringaschool.com/")));
                         break;
                     case 6:
                         startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("http://course.cse.ust.hk/comp4521/Exams.html")));
+                                Uri.parse("http://www.moringaschool.com/")));
                         break;
                     case 7:
                         startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("http://course.cse.ust.hk/comp4521/Project.html")));
+                                Uri.parse("http://www.moringaschool.com/")));
                         break;
                     case 8:
                         startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("http://course.cse.ust.hk/comp4521/Links.html")));
+                                Uri.parse("http://www.moringaschool.com/")));
                         break;
                     default:
 // When clicked, show a toast with the TextView text
